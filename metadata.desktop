@@ -1,8 +1,8 @@
 [SddmGreeterTheme]
-Name=forest-theme
+Name=forest-sddm-theme
 Description=sddm-theme
 Type=sddm-theme
 ConfigFile=Themes/forest.conf
 MainScript=Main.qml
-Theme-Id=sddm-theme
+Theme-Id=forest-sddm-theme
 QtVersion=6
