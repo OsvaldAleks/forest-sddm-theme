@@ -14,18 +14,20 @@
         pkgs = import nixpkgs { inherit system; };
       in {
         default = pkgs.stdenvNoCC.mkDerivation {
-          pname = "my-sddm-theme";
-          version = "1.0";
+        
+        pname = "forest-sddm-theme";
+        version = "1.0";
 
-          src = self;
+        src = self;
 
-          propagatedBuildInputs = [ pkgs.qt6.qtmultimedia ];
+        dontWrapQtApps = true;
+        propagatedBuildInputs = [ pkgs.qt6.qtmultimedia ];
 
-          installPhase = ''
-            mkdir -p $out/share/sddm/themes/forest-sddm-theme
-            cp -r ./* $out/share/sddm/themes/forest-sddm-theme/
-          '';
-        };
-      });
+        installPhase = ''
+          mkdir -p $out/share/sddm/themes/forest-sddm-theme
+          cp -r ./* $out/share/sddm/themes/forest-sddm-theme/
+        '';
+      };
+    });
   };
 }
