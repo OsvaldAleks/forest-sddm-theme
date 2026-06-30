@@ -20,8 +20,8 @@
           src = self;
 
           installPhase = ''
-            mkdir -p $out/share/sddm/themes/my-theme
-            cp -r ./* $out/share/sddm/themes/my-theme/
+            mkdir -p $out/share/sddm/themes/forest-sddm-theme
+            cp -r ./* $out/share/sddm/themes/forest-sddm-theme/
           '';
         };
       });
