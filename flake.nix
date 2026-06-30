@@ -19,6 +19,8 @@
 
           src = self;
 
+          propagatedBuildInputs = [ pkgs.qt6.qtmultimedia ];
+
           installPhase = ''
             mkdir -p $out/share/sddm/themes/forest-sddm-theme
             cp -r ./* $out/share/sddm/themes/forest-sddm-theme/
