@@ -21,7 +21,6 @@
         src = self;
 
         dontWrapQtApps = true;
-        propagatedBuildInputs = [ pkgs.qt6.qtmultimedia ];
 
         installPhase = ''
           mkdir -p $out/share/sddm/themes/forest-sddm-theme
